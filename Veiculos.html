@@ -288,7 +288,6 @@
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="row mb-3">
                 <div class="col-2">
-                  <label class="form-label" for="selectTypeOpt">Filtrar por categoria</label>
                   <select id="selectTypeOpt" class="form-select color-dropdown">
                     <option value="bg-primary" selected="">Status</option>
                     <option value="bg-success">Marca</option>
@@ -296,20 +295,26 @@
                     <option value="bg-secondary">Motorista</option>
                   </select>
                 </div>
-                <div class="col-2">
-                  <label class="form-label" for="selectTypeOpt">Filtrar por código</label>
+                <div class="col-3">
                   <div class="input-group input-group-merge">
-                  <input type="text" class="form-control" placeholder="Código" aria-label="Código" aria-describedby="SearchCódigo">
+                  <input type="text" class="form-control" placeholder="Filtrar por ID" aria-label="Código" aria-describedby="SearchCódigo">
                   <span class="input-group-text" id="basic-addon-search31"><i class="bx bx-search"></i></span>
                 </div>
               </div>
+              <div class="col-2">
+                <!-- <label class="form-label" for="selectTypeOpt">Filtrar por código</label> -->
+                <button type="button" class="btn btn-primary me-2" data-bs-toggle="tooltip" data-bs-offset="0,1" data-bs-placement="top" data-color="primary" title="Baixar em PDF">
+                  <i class="fa-solid fa-download me-1"></i> Relatório
+                </button>
               </div>
+            </div>
               <div class="card">
                 <h5 class="card-header">Veículos</h5>
                 <div class="table-responsive text-nowrap">
                   <table class="table">
                     <thead>
                       <tr>
+                        <th>ID</th>
                         <th>Marca</th>
                         <th>Modelo</th>
                         <th>Condutor</th>
@@ -318,7 +323,8 @@
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td><i class="menu-icon fa-solid fa-car me-3"></i><strong>Ford</strong></td>
+                        <td><i class="menu-icon fa-solid fa-car me-3"></i><strong>C0001</strong></td>
+                        <td>Ford</td>
                         <td>Ka</td>
                         <td>Marcio Silva</td>
                         <td><span class="badge bg-label-success me-1">Disponível</span></td>
@@ -335,7 +341,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><i class="menu-icon fa-solid fas fa-truck me-3"></i><strong>Scania</strong></td>
+                        <td><i class="menu-icon fa-solid fas fa-truck me-3"></i><strong>T0001</strong></td>
+                        <td>Scania</td>
                         <td>P 360</td>
                         <td>Marcos Silva</td>
                         <td><span class="badge bg-label-warning me-1">Manutenção</span></td>
@@ -352,7 +359,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><i class="menu-icon fa-solid fas fa-motorcycle me-3"></i><strong>Honda</strong></td>
+                        <td><i class="menu-icon fa-solid fas fa-motorcycle me-3"></i><strong>M0001</strong></td>
+                        <td>Honda</td>
                         <td>CG 160 Cargo</td>
                         <td>Juan Santos</td>
                         <td><span class="badge bg-label-danger me-1">Indisponível</span></td>

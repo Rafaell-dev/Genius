@@ -302,7 +302,11 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <div class="row g-3">
+                      <div class="row">
+                        <div class="col-2">
+                          <label for="idVeiculo" class="form-label">ID</label>
+                            <input type="text" class="form-control" disabled id="idFuncionario" aria-describedby="Código identificador">
+                        </div>
                         <div class="col mb-3">
                           <label for="tipoVeiculo" class="form-label">Tipo de veículo</label>
                           <select class="form-select" id="tipoVeiculo" aria-label="Tipo de veículo">
@@ -338,7 +342,7 @@
                         </div>
                       </div>
 
-                      <div class="row g-3">
+                      <div class="row">
                         <div class="col mb-3">
                           <label for="marcaVeiculo" class="form-label">Marca</label>
                           <input class="form-control" type="text" id="marcaVeiculo">
@@ -488,11 +492,14 @@
                               </div>
         
                               <div class="row g-3">
+                                <div class="col-2">
+                                  <label for="idFuncionario" class="form-label">ID</label>
+                                    <input type="text" class="form-control" disabled id="idFuncionario" aria-describedby="Código identificador">
+                                </div>
                                 <div class="col">
                                   <label for="emailFuncionario" class="form-label">Email</label>
                                   <input type="email" class="form-control" id="emailFuncionario">
-                                </div>
-        
+                                </div>        
                                 <div class="col">
                                   <label for="senhaFuncionario" class="form-label">Senha</label>
                                     <input class="form-control" type="password" id="senhaFuncionario">
